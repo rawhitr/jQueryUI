@@ -1,0 +1,695 @@
+
+<meta http-equiv="Context-Type" content="text/html; charset=US-ASCII">
+<html>
+    <head>
+
+        <style>
+
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+               v2.0 | 20110126
+               License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+                font-family: sans-serif;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }            
+
+            .propcare-main-container{
+                width: 832px;
+                height: auto;
+                overflow: visible;
+                margin: 0 auto;
+            }
+
+            .propcare-header{
+                width: 100%;
+                height: 100px;
+            }
+
+            .propcare-main-nav-header{
+                font-size: 13px;
+                width: 100%;
+                height: 27px;
+                background: #49454a; /* Old browsers */
+                background: -moz-linear-gradient(top, #49454a 0%, #49454a 41%, #25272a 42%, #25272a 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, #49454a 0%,#49454a 41%,#25272a 42%,#25272a 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, #49454a 0%,#49454a 41%,#25272a 42%,#25272a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49454a', endColorstr='#25272a',GradientType=0 ); 
+            }
+
+            .propcare-main-nav-header-left{
+                float: left;
+                color:#c4c2c6;
+                margin-top: 7px;
+                margin-left:5px;
+            }
+
+            .propcare-main-nav-header-right{
+                float: right;
+                color:#c4c2c6;
+                margin-top: 7px;
+                margin-right:5px;
+            }
+
+            .propcare-main-nav-header-right ul li{
+                display: inline;
+                margin-right: 5px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .propcare-main-nav-content{
+                background: #fcfeff; /* Old browsers */
+                background: -moz-linear-gradient(top, #fcfeff 0%, #e7eef8 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, #fcfeff 0%,#e7eef8 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, #fcfeff 0%,#e7eef8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfeff', endColorstr='#e7eef8',GradientType=0 );
+                height: 73px;
+                width: 100%;
+            }
+
+            .propcare-main-nav-content-left{
+                width: 666px;
+                position: relative;
+            }            
+
+            .propcare-main-nav-content-right{
+                font-size: 20px;
+                float: right;
+                width: 168px;
+                position: relative;
+            }                      
+
+            .propcare-main-nav-content-left-title{
+                font-size: 18px;
+                font-weight: bold;
+                text-align: left;
+                position: absolute;
+                top:10px;
+                left:10px;
+            }
+
+            .propcare-main-nav-content-left-menu ul li.level-1-highlighted{
+                background-color: #fefeff;
+                color:#090809;
+            }
+            
+            .propcare-main-nav-content-left-menu ul li.level-1-highlighted a{
+                color:#090809;
+            }            
+
+            .propcare-main-nav-content-left-menu ul li{
+                display: inline;      
+                color:#03599c;
+                background-color: #d5e9f9;
+                display: inline-block;
+                width: auto;
+                border-left:1px solid #d5e0e9;
+                border-right:1px solid #d5e0e9;
+                border-top:1px solid #d5e0e9;
+                padding: 5px;
+                font-size: 12px;
+                font-weight: bold;
+            }      
+            
+            .propcare-main-nav-content-left-menu ul li a{
+                color:#03599c;
+                text-decoration: none;
+            }            
+
+
+            .propcare-main-content-left{
+                width: 666px;
+            }            
+
+            .propcare-main-content-right{                
+                width: 168px;
+            }            
+
+            .propcare-useremail{
+                text-decoration: underline;               
+            }
+
+            .propcare-main-nav-content-left-menu{
+                position: absolute;
+                top:50px;
+                left:10px;
+            }
+
+            .propcare-logo{
+                position: absolute;
+                top:24px;
+                left:10px;   
+                font-size: 20px;
+                /*font-weight: bold;*/                
+            }
+
+            .propcare-main-nav{
+                width: 832px;
+                height: auto;
+                overflow: visible;    
+                display: block;
+            }            
+
+            .propcare-main-content{
+                width: 832px;
+                height: auto;
+                overflow: visible;                
+                display: block;
+                position: relative;
+                min-height: 20px;
+
+            }
+
+            .propcare-main-footer{
+                width: 832px;
+                height: auto;
+                overflow: visible;                
+                display: block;
+                position: relative;
+                clear: both;
+            }            
+
+            .propcare-main-content-left{
+                width: 658px;
+                height: auto;
+                overflow: visible;
+                float: left;
+                padding-top: 15px;
+                padding-right: 5px;
+                padding-bottom: 15px;
+                /*border-right: 1px solid #eeedef;*/
+            }
+
+            .propcare-main-content-right{
+                width: 160px;
+                height: auto;
+                overflow: visible;
+                float: right;                
+                padding-top: 15px;
+                padding-left: 5px;
+                padding-bottom: 15px;
+            }
+
+            .propcare-main-content-left-menu-level-1{
+                height: 23px;
+                width: 641px;
+                overflow: visible;
+                border-bottom: 1px solid #c8c7c8;   
+                padding-right: 20px;
+                margin-right: 5px;
+            }
+
+            .propcare-main-content-left-menu-level-2{
+                min-height: 11px;
+                width: 641px;
+                overflow: visible;
+                border-bottom: 1px solid #c8c7c8;                
+                padding-right: 20px;
+                margin-right: 5px;
+            }            
+
+            .propcare-main-content-left-menu-level-1 ul{
+                float: right;
+            }    
+
+            .propcare-main-content-left-menu-level-1 ul li{
+                display: inline;      
+                color:#6187b4;
+                background-color: #fefeff;
+                display: inline-block;
+                padding: 5px;
+                font-size: 12px;
+            }      
+            
+            .propcare-main-content-left-menu-level-1 ul li a{
+                color:#6187b4;
+                text-decoration: none;
+            }               
+
+            .propcare-main-content-left-menu-level-1 ul li.level-2-highlighted{
+                background-color: #fefeff;
+                border-left:1px solid #c8c7c8;
+                border-right:1px solid #c8c7c8;
+                border-top:1px solid #c8c7c8;                
+                color:#090809;
+                border-bottom: 1px solid #fefeff;
+            } 
+            
+            
+            .propcare-main-content-left-menu-level-1 ul li.level-2-highlighted a{
+                color:#090809;
+                text-decoration: none;
+            }            
+
+
+            .propcare-main-content-left-menu-level-2{
+                clear: both;
+                padding-top:12px;
+                padding-bottom:12px;
+            }
+            .propcare-main-content-left-menu-level-2{
+                height: auto;
+                overflow: visible;
+            }
+            
+            .propcare-main-content-left-menu-level-2 ul{
+                float: right;
+            }            
+
+            .propcare-main-content-left-menu-level-2 ul li{
+                display: inline;      
+                color:#6187b4;
+                background-color: #fefeff;
+                display: inline-block;
+                padding: 5px;
+                font-size: 12px;
+                float: right;
+            }   
+            
+            .propcare-main-content-left-menu-level-2 ul li a{
+                color:#6187b4;
+                text-decoration: none;
+            }                  
+
+            .propcare-main-content-left-menu-level-2 ul li.level-3-highlighted{
+                background-color: #fefeff;
+                border-left:1px solid #c8c7c8;
+                border-right:1px solid #c8c7c8;
+                border-top:1px solid #c8c7c8;                
+                color:#090809;
+                border-bottom: 1px solid #fefeff;
+            }         
+            
+            .propcare-main-content-left-menu-level-2 ul li.level-3-highlighted a{
+                color:#090809;
+                text-decoration: none;
+            }              
+
+            .propcare-searchbox{
+                width: 130px;
+            }
+
+            .propcare-main-content-contents{
+                padding-bottom: 10px;
+                margin: 10px;
+                border: 1px solid #b7d4ee;
+                background: #fcfeff; /* Old browsers */
+                background: -moz-linear-gradient(top, #fcfeff 0%, #e7eef8 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, #fcfeff 0%,#e7eef8 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, #fcfeff 0%,#e7eef8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfeff', endColorstr='#e7eef8',GradientType=0 )
+            }
+
+            .propcare-main-content-contents-header{
+                position: relative;
+                height: 26px;
+                margin: 5px;
+                background: #5e8bac; /* Old browsers */
+                background: -moz-linear-gradient(left, #5e8bac 0%, #eef2fb 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, #5e8bac 0%,#eef2fb 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, #5e8bac 0%,#eef2fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e8bac', endColorstr='#eef2fb',GradientType=1 );                 
+            }
+
+            .propcare-main-content-contents-header-title{
+                color:white;
+                font-size: 12px;
+                font-weight:bold;
+                padding-top: 4px;
+                position: absolute;
+                top:4px;
+                left:4px;
+            }
+
+            .propcare-main-content-contents-header-button{
+                font-size: 12px;
+                position: absolute;
+                top:4px;
+                right:4px;                
+            }
+
+            .table-tr-td-title{
+                font-size: 12px;
+                width: 120px;
+                display: inline-block;
+            }
+
+            .table-left-text{
+                width: 180px;
+                height: 25px;
+            }
+
+
+            .table-right-text{
+                width: 100px;
+                height: 25px;
+            }   
+
+            .propcare-main-content-contents-styled td{
+                padding: 5px 5px 5px 15px;
+            }
+
+            .table-tr-td-mandatory{
+                color: red;
+            }
+
+            .propcare-main-content-contents-nostyle{
+                margin: 10px;
+            }
+
+            .propcare-main-content-contents-diffstyled{
+                width: 100%;
+            }
+
+            .propcare-main-content-contents-diffstyled tr.bevelled_heading{
+                width: 100%;
+                background: #fbf9fb; /* Old browsers */
+                background: -moz-linear-gradient(top, #fbf9fb 0%, #e5e4e6 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, #fbf9fb 0%,#e5e4e6 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, #fbf9fb 0%,#e5e4e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbf9fb', endColorstr='#e5e4e6',GradientType=0 );                 
+            }            
+
+
+            .propcare-main-content-contents-diffstyled tr.normalrows td{
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left:4px;
+                padding-right: 4px;
+                text-align: center;
+            }
+
+            .propcare-main-content-contents-diffstyled tr th{
+                border: 1px solid #c1bfc1;
+                font-size: 12px;
+                padding: 6px;
+                color: #535153;
+            }
+
+            .propcare-main-content-contents-diffstyled tr th:last-child{
+                width: 60px;
+            }          
+
+            .propcare_select{
+                width: 80px;
+            }
+
+            .propcarelongtext{
+                width: 120px;
+            }
+
+            .propcareshorttext{
+                width: 80px;
+            }
+
+            .footerrows{
+                border-top: 1px solid #b4b3b4;
+            }
+
+            .footerrowsdisplaytd{
+                text-align: right;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .addsymbol{
+                color: green;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .additionalbuttons{
+                font-size: 12px;
+                float: right;
+            }
+
+            .notesdiv{
+                background-color: #eeedef;
+            }
+
+            .propcare-main-content-contents-nostyle-1{
+                clear: both;
+                padding-top: 10px;
+                margin: 5px;
+            }
+
+            .notesdiv{
+                background-color: #eeedef;
+                padding: 6px;
+            }
+
+            .notesdiv span{
+                font-size: 14px;
+                color: #383638;
+                font-weight: bold;
+            }
+
+            .addnotesdiv{
+                float: right;
+            }
+
+            .addnotesdiv span{
+                color: green;                
+            }
+
+            .addnotesdiv a{
+                font-size: 12px;
+                color:#03599c;
+            }            
+            .additionalbuttons a{
+                color:#03599c;
+            }
+            
+            .uploadfile{
+                font-size: 12px;
+                background-color: #eef5f8;
+                padding: 4px;
+                border: 1px dashed #909599;
+                border-radius: 5px;
+            }
+
+        </style>
+    </head>    
+    <body>
+        <div class="propcare-main-container">
+
+            <div class="propcare-main-nav">
+
+                <div class="propcare-main-nav-header">
+                    <div class="propcare-main-nav-header-left">
+                        Logged in as: <span class="propcare-useremail">ravi.kumar@propertycare.co.in</span>
+                    </div>
+
+                    <div class="propcare-main-nav-header-right">
+                        <ul>
+                            <li>Settings</li>
+                            <li>Help & Training &Gt;</li>
+                            <li>Forums &Gt;</li>
+                            <li>Log out</li>
+                        </ul>
+                    </div>                               
+                </div>
+
+                <div class="propcare-main-nav-content">                    
+
+                    <div class="propcare-main-nav-content-left">
+
+                        <div class="propcare-main-nav-content-left-title">
+                            The Management Company Name
+                        </div>
+
+                        <div class="propcare-main-nav-content-left-menu">
+                            <ul class="propcare-menu-level-1">
+                                <li>Start Page</li>
+                                <li>Leasing</li>
+                                <li>Properties</li>
+                                <li>People</li>
+                                <li class="level-1-highlighted">Accounting</li>
+                                <li>Maintenance</li>
+                                <li>Reporting</li>
+                            </ul>                            
+                        </div>
+
+                    </div>
+
+                    <div class="propcare-main-nav-content-right">
+                        <span class="propcare-logo">Property Care</span>
+                    </div>                                                            
+                </div>
+
+            </div>
+
+            <div class="propcare-main-content">
+                <div class="propcare-main-content-left">
+                    <div class="propcare-main-content-left-menu-level-1">
+                        <ul class="propcare-menu-level-2">
+                            <li>Payables</li>
+                            <li>Receivables</li>
+                            <li  class="level-2-highlighted">Bank Accounts</li>
+                            <li>Journal Entries</li>
+                            <li>GL Accounts</li>
+                        </ul>                            
+                    </div>                    
+                    <div class="propcare-main-content-left-menu-level-2">
+                        <ul class="propcare-menu-level-3">
+                            <li>Bills</li>
+                            <li   class="level-3-highlighted">Cheques</li>
+                            <li>Recurring</li>
+                        </ul>                            
+                    </div>  
+
+                    <div class='propcare-main-content-contents'>
+                        <div class="propcare-main-content-contents-header">
+                            <span class="propcare-main-content-contents-header-title">Bill Details</span>
+                            <input type="button" class="propcare-main-content-contents-header-button" value="Repeat Bill">
+                        </div>
+                        <table class="propcare-main-content-contents-styled">                           
+                            <tr><td><span class="table-tr-td-mandatory">* </span><span class="table-tr-td-title">Payee:</span> <input class="table-left-text" value=""/></td><td><span class="table-tr-td-mandatory">* </span><span class="table-tr-td-title">Bill Date:</span> <input  class="table-right-text" value="" /></td></tr>
+                            <tr><td><span class="table-tr-td-notmandatory">&nbsp;&nbsp;</span><span class="table-tr-td-title">Reference:</span> <input class="table-left-text" value=""/></td><td><span class="table-tr-td-mandatory">* </span><span class="table-tr-td-title">Due Date:</span> <input class="table-right-text" value="" /></td></tr>
+                            <tr><td><span class="table-tr-td-notmandatory">&nbsp;&nbsp;</span><span class="table-tr-td-title">Remarks</span> <input class="table-left-text" value=""/></td><td><span class="table-tr-td-mandatory">* </span><span class="table-tr-td-title">Total Amount:</span> <input class="table-right-text" value="" /></td></tr>
+                            <tr><td><span class="table-tr-td-notmandatory">&nbsp;&nbsp;</span><span class="table-tr-td-title">Memo On Check</span> <input class="table-left-text" value=""/></td><td><span class="table-tr-td-mandatory">* </span><span class="table-tr-td-title">Cash Account:</span> <input class="table-right-text" value="" /></td></tr>
+                        </table>
+                    </div>
+
+                    <div class='propcare-main-content-contents-nostyle'>
+                        <table class="propcare-main-content-contents-diffstyled">                           
+                            <tr class="bevelled_heading"><th><span class="table-tr-td-mandatory">* </span>Property</th><th>Unit</th><th><span class="table-tr-td-mandatory">* </span>Account</th><th>Description</th><th><span class="table-tr-td-mandatory">* </span>Amount</th><th>&nbsp;</th></tr>
+                            <tr class="normalrows">
+                                <td><input class="propcarelongtext" value="" placeholder="Begin typing to search"></td>
+                                <td><select class="propcare_select"></select></td>
+                                <td><select class="propcare_select"></select></td>
+                                <td><input class="propcarelongtext" value=""/></td>
+                                <td><input class="propcareshorttext" value=""/></td>
+                                <td class="addsymbol">&bigoplus;</td>
+                            </tr>
+                            <tr class="footerrows">
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td class="footerrowsdisplaytd"><span class="footerrowstitle">Total:</span></td>
+                                <td class="footerrowsdisplaytd"><span class="footerrowsvalue">0.00</span></td>
+                                <td>&nbsp;</td>
+                            </tr>                            
+                        </table>
+                    </div>                    
+
+                    <div class='propcare-main-content-contents-nostyle'>
+                        <div class="additionalbuttons">
+                            <a href="#">Cancel</a>
+                            <input type="button" value="Add Another">
+                            <input type="button" value="Done">
+                        </div>
+                    </div>    
+
+                    <div class='propcare-main-content-contents-nostyle-1'>
+                        <div class="notesdiv">
+                            <span>Notes</span>
+                            <div class="addnotesdiv">
+                                <span class="plusbutton">&bigoplus;</span>
+                                <a href="#">Add Note</a>
+                            </div>                                
+                        </div>                        
+                    </div>                    
+
+                    <div class='propcare-main-content-contents-nostyle-1'>
+                        <div class="notesdiv">
+                            <table style="width: 100%;"><tr><td  style="width: 25%;">
+                                        <span>Attached Files</span>                                    
+                                    </td><td  style="width: 50%;text-align: center;">
+                                        <div class="uploadfile">Drag to upload files</div>
+                                    </td><td  style="width: 25%;">
+                                        <div class="addnotesdiv">
+                                            <span class="plusbutton">&bigoplus;</span>
+                                            <a href="#">Upload File</a>
+                                        </div>                   
+                                    </td>
+                                </tr>
+                            </table>             
+                        </div>                        
+                    </div>                    
+
+
+                </div>
+
+                <div class="propcare-main-content-right">
+                    <input type='text' class='propcare-searchbox' value='' placeholder="Search here..."/>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="propcare-main-footer">
+                <br/><br/><br/>
+            </div>
+
+        </div>
+        
+    <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>    
+    
+        <script>
+            
+            $(document).ready(function () {
+                
+                $("#searchvendor").keypress(function () {
+                    var typedin=$("#searchvendor").val();
+                    
+                    $.ajax({
+                        
+                    url: "../../Gateway/accounting_payables_enterbill.php?module=enterbill&command=getvendor&vendorpartname="+typedin,
+                            success: function (data) {
+                                alert("hi");
+                            }
+                            
+                    });
+                });
+                
+            });                
+
+        </script>
+    </body>
+</html><html><head></head><body></body></html>
